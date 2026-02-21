@@ -7,127 +7,128 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2575.7">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1">&lt;title&gt;Rave Murder Generator&lt;/title&gt;</p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>font-family: 'Arial Black', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>background: linear-gradient(270deg, #ff00cc, #3333ff, #00ffcc);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>background-size: 600% 600%;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>animation: raveBG 10s ease infinite;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>@keyframes raveBG {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>0% { background-position: 0% 50%; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>50% { background-position: 100% 50%; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>100% { background-position: 0% 50%; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>h1 {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>margin-top: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>font-size: 3em;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>text-shadow: 0 0 20px #fff;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.result {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>margin-top: 60px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>font-size: 2em;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>text-shadow: 0 0 15px #00ffff;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>min-height: 120px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>button {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>margin-top: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>padding: 20px 40px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>font-size: 1.5em;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>border-radius: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>background: #00ffcc;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>color: black;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>box-shadow: 0 0 20px #00ffcc;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>transition: 0.2s;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>button:hover {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>transform: scale(1.1);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>box-shadow: 0 0 40px #00ffcc;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.spin {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>animation: flash 0.2s infinite alternate;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>@keyframes flash {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>from { opacity: 1; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>to { opacity: 0.6; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1">&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;h1&gt;🔊 DROP THE BEAT 🔊&lt;/h1&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="result" id="result"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>Click the button to reveal the chaos...</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;button onclick="spin()"&gt;GENERATE MURDER&lt;/button&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p1">const victims = ["David Yugen", "Rotini", "Ronin", "Paco", "PapaBear", "Champs"];</p>
-<p class="p1">const murderers = ["David Guetta", "Martin Garrix", "John Summit", "Excision", "Subtronics"];</p>
-<p class="p1">const stages = ["Kinetic Field", "Cosmic Meadow", "Circuit Grounds", "Neon Garden", "Basspod", "Wasteland"];</p>
-<p class="p1">const weapons = ["glowstick", "molly", "totem", "feather boa", "Lunchbox", "pashmina"];</p>
-<p class="p2"><br></p>
-<p class="p1">function randomItem(arr) {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>return arr[Math.floor(Math.random() * arr.length)];</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">function spin() {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const resultDiv = document.getElementById("result");</p>
-<p class="p1"><span class="Apple-converted-space">    </span>resultDiv.classList.add("spin");</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>let spinCount = 0;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>const spinner = setInterval(() =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>resultDiv.innerHTML =</p>
-<p class="p1"><span class="Apple-converted-space">            </span>randomItem(victims) + " has been murdered by " +</p>
-<p class="p1"><span class="Apple-converted-space">            </span>randomItem(murderers) + " at " +</p>
-<p class="p1"><span class="Apple-converted-space">            </span>randomItem(stages) + " with the " +</p>
-<p class="p1"><span class="Apple-converted-space">            </span>randomItem(weapons) + "...";</p>
-<p class="p1"><span class="Apple-converted-space">        </span>spinCount++;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}, 100);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>setTimeout(() =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>clearInterval(spinner);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>resultDiv.classList.remove("spin");</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const finalText =</p>
-<p class="p1"><span class="Apple-converted-space">            </span>randomItem(victims) + " has been murdered by " +</p>
-<p class="p1"><span class="Apple-converted-space">            </span>randomItem(murderers) + " at " +</p>
-<p class="p1"><span class="Apple-converted-space">            </span>randomItem(stages) + " with the " +</p>
-<p class="p1"><span class="Apple-converted-space">            </span>randomItem(weapons) + ".";</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>resultDiv.innerHTML = "💀 " + finalText + " 💀";</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}, 2500);</p>
-<p class="p1">}</p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;title&gt;Rave Murder Generator&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>margin: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>font-family: 'Arial Black', sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background: linear-gradient(270deg, #ff00cc, #3333ff, #00ffcc);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-size: 600% 600%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>animation: raveBG 10s ease infinite;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>color: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>overflow: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@keyframes raveBG {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>0% { background-position: 0% 50%; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>50% { background-position: 100% 50%; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>100% { background-position: 0% 50%; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>h1 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>margin-top: 40px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>font-size: 3em;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>text-shadow: 0 0 20px #fff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.result {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>margin-top: 60px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>font-size: 2em;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>padding: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>text-shadow: 0 0 15px #00ffff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>min-height: 120px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>button {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>margin-top: 40px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>padding: 20px 40px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>font-size: 1.5em;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>border: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>border-radius: 50px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background: #00ffcc;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>color: black;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>cursor: pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>box-shadow: 0 0 20px #00ffcc;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>transition: 0.2s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>button:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>transform: scale(1.1);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>box-shadow: 0 0 40px #00ffcc;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.spin {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>animation: flash 0.2s infinite alternate;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@keyframes flash {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>from { opacity: 1; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>to { opacity: 0.6; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;h1&gt;🔊 DROP THE BEAT 🔊&lt;/h1&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="result" id="result"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>Click the button to reveal the chaos...</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;button onclick="spin()"&gt;GENERATE MURDER&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;script&gt;</span></p>
+<p class="p1"><span class="s1">const victims = ["David Yugen", "Rotini", "Ronin", "Paco", "PapaBear", "Champs"];</span></p>
+<p class="p1"><span class="s1">const murderers = ["David Guetta", "Martin Garrix", "John Summit", "Excision", "Subtronics"];</span></p>
+<p class="p1"><span class="s1">const stages = ["Kinetic Field", "Cosmic Meadow", "Circuit Grounds", "Neon Garden", "Basspod", "Wasteland"];</span></p>
+<p class="p1"><span class="s1">const weapons = ["glowstick", "molly", "totem", "feather boa", "Lunchbox", "pashmina"];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">function randomItem(arr) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>return arr[Math.floor(Math.random() * arr.length)];</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">function spin() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const resultDiv = document.getElementById("result");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>resultDiv.classList.add("spin");</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let spinCount = 0;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const spinner = setInterval(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>resultDiv.innerHTML =</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>randomItem(victims) + " has been murdered by " +</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>randomItem(murderers) + " at " +</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>randomItem(stages) + " with the " +</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>randomItem(weapons) + "...";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>spinCount++;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}, 100);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>setTimeout(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>clearInterval(spinner);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>resultDiv.classList.remove("spin");</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const finalText =</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>randomItem(victims) + " has been murdered by " +</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>randomItem(murderers) + " at " +</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>randomItem(stages) + " with the " +</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>randomItem(weapons) + ".";</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>resultDiv.innerHTML = "💀 " + finalText + " 💀";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}, 2500);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
 </body>
 </html>
